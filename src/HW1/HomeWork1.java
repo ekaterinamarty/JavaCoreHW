@@ -5,7 +5,7 @@ public class HomeWork1 {
         Course c = new Course(new String[]{ "Run", "Swim", "Bike" });
         Team t = new Team(
                 "Dream-Team",
-                new String[]{ "Vasya", "Petya", "Sasha", "Grisha", "Maria" });
+                new String[]{ "Vasya", "Petya", "Sasha", "Grisha" });
         c.doIt(t);
         t.showResults();
     }
