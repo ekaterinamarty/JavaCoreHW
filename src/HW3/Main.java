@@ -17,6 +17,43 @@
 package HW3;
 
 public class Main {
+    public static void main(String[] args) throws Exception {
+        // 1. Create box of apples.
+        var apples = new Box<Apple>();
+        apples.add(new Apple());
+        apples.add(new Apple());
+        apples.add(new Apple());
+        System.out.println("Apple box wieght: " + apples.getWeight());
 
+        // 2. Create box of oranges.
+        var oranges = new Box<Orange>();
+        oranges.add(new Orange());
+        oranges.add(new Orange());
+        oranges.add(new Orange());
+        oranges.add(new Orange());
+        oranges.add(new Orange());
+        System.out.println("Orange box weight: " + oranges.getWeight());
 
+        // 3. Create yet-another-apple box.
+        var ya_apples = new Box<Apple>();
+        ya_apples.add(new Apple());
+        ya_apples.add(new Apple());
+        ya_apples.add(new Apple());
+        System.out.println("Yet-another-apple box size: " + ya_apples.size());
+
+        // 4. Compare equal boxes.
+        System.out.println("Compare equal boxes: " + apples.compare(ya_apples));
+
+        // 5. Compare oranges and apples.
+        System.out.println("Compare inequal boxes: " + apples.compare(oranges));
+
+        // 6. Move apples to oranges (compile error).
+        // apples.moveTo(oranges);
+
+        // 7. Move apples to another apple box.
+        apples.moveTo(ya_apples);
+        System.out.println("Apple box size after movement: " + apples.size() + ". Yet-another-apple box size: " + ya_apples.size());
+    }
 }
+
+
