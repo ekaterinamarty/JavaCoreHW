@@ -19,6 +19,7 @@ public class Main {
                 { "6", "4", "3", "2" },
                 { "3", "2", "1", "6" },
                 { "7", "6", "9", "17" },
+
         };
         try {
             System.out.println(method(a));
