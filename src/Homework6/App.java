@@ -16,19 +16,28 @@ public class App {
     public static void main(String[] args) throws Exception {
         var client = new OkHttpClient();
 
-        var url = HttpUrl.parse("http://dataservice.accuweather.com/forecasts/v1").newBuilder()
+        var uri = new HttpUrl.Builder()
+                .scheme("http")
+                .host("dataservice.accuweather.com")
+                .addPathSegment("forecasts")
+                .addPathSegment("v1")
                 .addPathSegment(FORECAST_TYPE)
                 .addPathSegment(FORECAST_PERIOD)
                 .addPathSegment(LOCATION_KEY)
                 .addQueryParameter("apikey", API_KEY)
                 .build();
-        System.out.println(url.toString());
+        System.out.println(uri);
 
         var request = new Request.Builder()
-                .url(url)
+                .url(uri)
                 .build();
 
-        var response = client.newCall(request).execute();
-        System.out.println(response.body().string());
+        try (var response = client.newCall(request).execute()) {
+            var body = response.body();
+            if (body != null) {
+                var json = body.string();
+                System.out.println(json);
+            }
+        }
     }
 }

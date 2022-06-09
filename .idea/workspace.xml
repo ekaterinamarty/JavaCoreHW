@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8b08846-9f1d-4467-875a-465356ed3a95" name="Changes" comment="sixth homework" />
+    <list default="true" id="b8b08846-9f1d-4467-875a-465356ed3a95" name="Changes" comment="sixth homework">
+      <change beforePath="$PROJECT_DIR$/src/Homework6/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework6/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +44,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.HW6.App">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework6.App" />
+      <module name="JavaCoreHW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Homework6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HW3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HW3.Main" />
       <module name="JavaCoreHW" />
@@ -82,19 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWork1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HW1.HomeWork1" />
-      <module name="JavaCoreHW" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HW1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HW2.Main" />
       <module name="JavaCoreHW" />
@@ -110,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.HW6.App" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.HW5.App" />
         <item itemvalue="Application.HW3.Main" />
-        <item itemvalue="Application.HomeWork1" />
       </list>
     </recent_temporary>
   </component>
